@@ -1,0 +1,2343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>995</width>
+    <height>812</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="toolTipDuration">
+   <number>-2</number>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(240,234,214);
+font: 10pt &quot;Courier New&quot;;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_10" stretch="2,4,2,1,20">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 40pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string>ScoreBoard</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="indent">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_23" stretch="3,2,3">
+        <property name="leftMargin">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>1</number>
+        </property>
+        <property name="rightMargin">
+         <number>1</number>
+        </property>
+        <property name="bottomMargin">
+         <number>1</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="5,1">
+          <property name="leftMargin">
+           <number>1</number>
+          </property>
+          <property name="topMargin">
+           <number>1</number>
+          </property>
+          <property name="rightMargin">
+           <number>1</number>
+          </property>
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="away_team">
+            <property name="styleSheet">
+             <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+            </property>
+            <property name="text">
+             <string>Away Team</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="away_score">
+            <property name="styleSheet">
+             <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
+          <property name="leftMargin">
+           <number>1</number>
+          </property>
+          <property name="topMargin">
+           <number>1</number>
+          </property>
+          <property name="rightMargin">
+           <number>1</number>
+          </property>
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="inning">
+            <property name="styleSheet">
+             <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+            </property>
+            <property name="text">
+             <string>Inning</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,5">
+          <property name="leftMargin">
+           <number>1</number>
+          </property>
+          <property name="topMargin">
+           <number>1</number>
+          </property>
+          <property name="rightMargin">
+           <number>1</number>
+          </property>
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="home_score">
+            <property name="styleSheet">
+             <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="home_team">
+            <property name="styleSheet">
+             <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+            </property>
+            <property name="text">
+             <string>Home</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_26" stretch="2,3,2">
+        <property name="leftMargin">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>1</number>
+        </property>
+        <property name="rightMargin">
+         <number>1</number>
+        </property>
+        <property name="bottomMargin">
+         <number>1</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <property name="leftMargin">
+           <number>1</number>
+          </property>
+          <property name="topMargin">
+           <number>1</number>
+          </property>
+          <property name="rightMargin">
+           <number>1</number>
+          </property>
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="Outs">
+            <property name="styleSheet">
+             <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+            </property>
+            <property name="text">
+             <string>Outs</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <property name="leftMargin">
+             <number>1</number>
+            </property>
+            <property name="topMargin">
+             <number>1</number>
+            </property>
+            <property name="rightMargin">
+             <number>1</number>
+            </property>
+            <property name="bottomMargin">
+             <number>1</number>
+            </property>
+            <item>
+             <widget class="QFrame" name="out_1">
+              <property name="styleSheet">
+               <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="out_2">
+              <property name="styleSheet">
+               <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <property name="leftMargin">
+           <number>1</number>
+          </property>
+          <property name="topMargin">
+           <number>1</number>
+          </property>
+          <property name="rightMargin">
+           <number>1</number>
+          </property>
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="Outs_3">
+            <property name="styleSheet">
+             <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+            </property>
+            <property name="text">
+             <string>Balls</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_25">
+            <property name="leftMargin">
+             <number>1</number>
+            </property>
+            <property name="topMargin">
+             <number>1</number>
+            </property>
+            <property name="rightMargin">
+             <number>1</number>
+            </property>
+            <property name="bottomMargin">
+             <number>1</number>
+            </property>
+            <item>
+             <widget class="QFrame" name="ball_1">
+              <property name="styleSheet">
+               <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="ball_2">
+              <property name="styleSheet">
+               <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="ball_3">
+              <property name="styleSheet">
+               <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <property name="leftMargin">
+           <number>1</number>
+          </property>
+          <property name="topMargin">
+           <number>1</number>
+          </property>
+          <property name="rightMargin">
+           <number>1</number>
+          </property>
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="Outs_2">
+            <property name="styleSheet">
+             <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+            </property>
+            <property name="text">
+             <string>Strikes</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_24">
+            <item>
+             <widget class="QFrame" name="strike_1">
+              <property name="styleSheet">
+               <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="strike_2">
+              <property name="styleSheet">
+               <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="last_action">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="1,1">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6" stretch="3,1,1">
+          <item>
+           <widget class="QFrame" name="verticalFrame_2">
+            <property name="styleSheet">
+             <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+border-color: rgb(0, 0, 0);
+</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,2,2">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="2,1,1,1,1,1,1,1,1,1,1,1,1">
+               <item>
+                <widget class="QLabel" name="blank">
+                 <property name="styleSheet">
+                  <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="st1">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="st2">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="st3">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="st4">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="st5">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="st6">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="st7">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="st8">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string>8</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="st9">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string>9</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="struns">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string>R</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="sthits">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string>H</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="sterrors">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string>E</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="2,1,1,1,1,1,1,1,1,1,1,1,1">
+               <item>
+                <widget class="QLabel" name="away_board">
+                 <property name="styleSheet">
+                  <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="away_1">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="away_2">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="away_3">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="away_4">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="away_5">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="away_6">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="away_7">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="away_8">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="away_9">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="away_runs">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="away_hits">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="away_errors">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="2,1,1,1,1,1,1,1,1,1,1,1,1">
+               <item>
+                <widget class="QLabel" name="home_board">
+                 <property name="styleSheet">
+                  <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="home_1">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="home_2">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="home_3">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="home_4">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="home_5">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="home_6">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="home_7">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="home_8">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="home_9">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="home_runs">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="home_hits">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="home_errors">
+                 <property name="styleSheet">
+                  <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,2">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetDefaultConstraint</enum>
+            </property>
+            <property name="leftMargin">
+             <number>1</number>
+            </property>
+            <property name="topMargin">
+             <number>1</number>
+            </property>
+            <property name="rightMargin">
+             <number>1</number>
+            </property>
+            <property name="bottomMargin">
+             <number>1</number>
+            </property>
+            <item>
+             <layout class="QGridLayout" name="gridLayout">
+              <property name="leftMargin">
+               <number>1</number>
+              </property>
+              <property name="topMargin">
+               <number>1</number>
+              </property>
+              <property name="rightMargin">
+               <number>1</number>
+              </property>
+              <property name="bottomMargin">
+               <number>1</number>
+              </property>
+              <item row="0" column="2">
+               <widget class="QLabel" name="base_6">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLabel" name="base_4">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="base_3">
+                <property name="styleSheet">
+                 <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QLabel" name="base_1">
+                <property name="styleSheet">
+                 <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="base_2">
+                <property name="styleSheet">
+                 <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(71, 61, 26);
+border-width : 5px;
+border-style:inset;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="base_5">
+                <property name="styleSheet">
+                 <string notr="true">font: 20pt &quot;Team-Captain&quot;;
+</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <property name="leftMargin">
+               <number>1</number>
+              </property>
+              <property name="topMargin">
+               <number>1</number>
+              </property>
+              <property name="rightMargin">
+               <number>1</number>
+              </property>
+              <property name="bottomMargin">
+               <number>1</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="3">
+                <property name="leftMargin">
+                 <number>1</number>
+                </property>
+                <property name="topMargin">
+                 <number>1</number>
+                </property>
+                <property name="rightMargin">
+                 <number>1</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>1</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="pitcher_name">
+                  <property name="styleSheet">
+                   <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="3">
+                <property name="leftMargin">
+                 <number>1</number>
+                </property>
+                <property name="topMargin">
+                 <number>1</number>
+                </property>
+                <property name="rightMargin">
+                 <number>1</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>1</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="batter_name">
+                  <property name="styleSheet">
+                   <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="1,3,1">
+            <item>
+             <widget class="QCalendarWidget" name="calendar">
+              <property name="styleSheet">
+               <string notr="true">font: 8pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="pick_game">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QPushButton" name="todays_game">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                </property>
+                <property name="text">
+                 <string>Today's Games</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="go_to_date">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                </property>
+                <property name="text">
+                 <string>Go To Date</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="go_to_game">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;
+</string>
+                </property>
+                <property name="text">
+                 <string>Go To Game</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="leftMargin">
+           <number>1</number>
+          </property>
+          <property name="topMargin">
+           <number>1</number>
+          </property>
+          <property name="rightMargin">
+           <number>1</number>
+          </property>
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="3,1,1,1,1">
+            <item>
+             <widget class="QLabel" name="hitter">
+              <property name="styleSheet">
+               <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string>Hitter</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="abs">
+              <property name="styleSheet">
+               <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string>H-AB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="runs">
+              <property name="styleSheet">
+               <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string>R</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="hits">
+              <property name="styleSheet">
+               <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string>BB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="avg">
+              <property name="styleSheet">
+               <string notr="true">font: 15pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string>HR</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_13" stretch="3,1,1,1,1">
+            <item>
+             <widget class="QLabel" name="hitter_1">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="abs_1">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="runs_1">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="bb_1">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="avg_1">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_14" stretch="3,1,1,1,1">
+            <item>
+             <widget class="QLabel" name="hitter_2">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="abs_2">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="runs_2">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="bb_2">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="avg_2">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_15" stretch="3,1,1,1,1">
+            <item>
+             <widget class="QLabel" name="hitter_3">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="abs_3">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="runs_3">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="bb_3">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="avg_3">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_16" stretch="3,1,1,1,1">
+            <item>
+             <widget class="QLabel" name="hitter_4">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="abs_4">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="runs_4">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="bb_4">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="avg_4">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_17" stretch="3,1,1,1,1">
+            <item>
+             <widget class="QLabel" name="hitter_5">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="abs_5">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="runs_5">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="bb_5">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="avg_5">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_18" stretch="3,1,1,1,1">
+            <item>
+             <widget class="QLabel" name="hitter_6">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="abs_6">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="runs_6">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="bb_6">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="avg_6">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_19" stretch="3,1,1,1,1">
+            <item>
+             <widget class="QLabel" name="hitter_7">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="abs_7">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="runs_7">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="bb_7">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="avg_7">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_20" stretch="3,1,1,1,1">
+            <item>
+             <widget class="QLabel" name="hitter_8">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="abs_8">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="runs_8">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="bb_8">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="avg_8">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_22" stretch="3,1,1,1,1">
+            <item>
+             <widget class="QLabel" name="hitter_9">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="abs_9">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="runs_9">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="bb_9">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="avg_9">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;Team-Captain&quot;;
+color: rgb(71, 61, 26);
+border-color: rgb(0, 0, 0);
+border-style:inset;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>995</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
